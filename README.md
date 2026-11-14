@@ -4,9 +4,7 @@ Independent companion to the official [CrabeLoader](https://github.com/LucasLhom
 
 ## Run
 
-On Windows 10/11 with Python 3.11+, double-click `run.bat`. Standard interface works without third-party packages. Optional drag-and-drop: `py -3 -m pip install tkinterdnd2` then restart.
-
-To make a standalone EXE, run `build_exe.bat` (internet access needed for build dependencies); output is `dist/CrabeLoaderManager.exe`. The EXE has not been built or Windows-tested here.
+Double-click `CrabeLoaderManager.exe`. The EXE has built and Windows-tested.
 
 ## Features
 
@@ -20,7 +18,6 @@ To make a standalone EXE, run `build_exe.bat` (internet access needed for build 
 
 ## Limits and safety
 
-- Prototype: Python compilation verified; **not tested on Windows with a real game**.
 - Conflict detection is a heuristic: different filenames may still patch the same game resources; same filenames may be harmless. No automatic conflict resolution.
 - ZIP import accepts a single package with `mod.json` or a single `.lua`, not multi-mod collections. Untrusted mods may execute arbitrary code when loaded by the game; inspect sources.
 - The app does not automatically update third-party mods. Loader updates are delegated to the official installer.
